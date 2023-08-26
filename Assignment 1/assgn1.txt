@@ -1,0 +1,153 @@
+Question -> 1
+
+What is the difference between a Library and a Framework?
+
+Answer - 
+
+Libraries and frameworks are both reusable pieces of software that help developers accomplish common tasks more efficiently. However, there are key differences between the two:
+
+😀 Library:
+
+   ➡️  Inversion of Control: 
+   
+   In a library, you are in control of your program's flow. 
+  
+   You call the library when you need its specific functionality. 
+   
+   It's essentially a collection of functions and classes that you can use as tools in your code.
+
+   You can pick and choose which parts of a library to use in your application. 
+   
+   You can include a library in your project and use only the functions or classes that are relevant to your needs. 
+
+😃 Framework:
+
+    ➡️ Inversion of Control: 
+    
+    In a framework, the control flow is inverted. 
+    
+    The framework controls the flow of your application. 
+    
+    It provides a skeletal structure that you must follow. 
+    
+    Your code fits into this structure and is often called by the framework.
+
+    They provide a predefined structure, architecture, and set of rules for building applications.
+
+
+
+
+
+Question -> 2
+
+What is CDN ? Why do we use it?
+
+Answer -> 
+
+Let's explain Content Delivery Network (CDN) with a practical example:
+
+😍 Imagine you have a website that contains various types of content, such as images, stylesheets, and JavaScript files. Your website is hosted on a server in a data center located in New York City. When someone from New York visits your website, the content loads relatively quickly because the server is nearby.
+
+😊 Now, consider someone from Tokyo, Japan, trying to access your website. The distance between Tokyo and New York is significant, and as a result, when this user tries to access your website, the content takes longer to load. This is because the data has to travel a great distance across the internet to reach the user's computer.
+
+Here's where a CDN comes into play:
+
+ ➡️  a CDN is like having multiple copies of your website's content stored in different locations worldwide. When users access your website, they are served content from the nearest CDN server, reducing the latency and significantly speeding up content delivery. This not only improves the user experience but also reduces the load on your origin server (the server in New York in this example), making your website more robust and scalable.
+
+
+
+
+ Question -> 3
+
+ Why is React Known as React?
+
+ Answer ->
+
+ React, the JavaScript library for building user interfaces, is known as "React" because it reflects one of its fundamental concepts: reacting to changes in data. 
+ 
+ The name "React" suggests how the library operates and its core philosophy.
+
+ The name "React" emphasizes the library's focus on reactive programming, where user interface components respond to changes in data and update themselves automatically. 
+ 
+ In other words, React allows developers to create user interfaces that "react" to changes in the application's state.
+
+
+
+
+ Question -> 4
+
+ What is CrossOrigin in Script Tag?
+
+ Answer - > 
+
+ 😍 The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains. The resources may include Audio, Video, Images, Link or external script that specifies whether to support a cross-origin request or not.
+
+ 😍 CORS: It stands for cross-origin resource sharing. It is a mechanism by which one webpage requests to another domain for fetching out the resource like audio, video, script, etc. from the third party server without leaking their credentials information. 
+
+
+
+
+Question -> 5
+
+What is Difference between React and ReactDOM?
+
+Answer -> 
+
+React and ReactDOM are two related but distinct libraries in the React ecosystem, each serving a specific purpose in web development:
+
+    React:
+
+        Purpose: React is the core library for building user interfaces in JavaScript. 
+        
+        Its primary focus is on the UI components, their rendering, and how they manage their state.
+
+    ReactDOM:
+
+    Purpose: ReactDOM is a specific package within the React ecosystem that deals with rendering React components to the DOM (Document Object Model). 
+
+
+Short Answer -> 
+
+React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+
+React-DOM: a complimentary library to React which glues React to the browser DOM
+
+In a nutshell, Whenever we use component, classes, elements, etc. We’re using React and whenever we use methods like render() or findDOMNode() we’re using React-DOM.
+
+
+
+
+Question -> 6
+
+Why did the React team decide to split React and React-DOM into two different libraries?
+
+Answer -> 
+
+The reason React and ReactDOM were split into two libraries was due to the arrival of React Native (A react platform for mobile development).
+
+React-DOM binds the idea of React to a web browser. And ideally, React has nothing to do with a browser or web for that matter. That’s why we’re seeing tools and frameworks like React-Native, React-Three being developed. These tools and frameworks don’t use React-DOM, but they do in fact use the idea behind React.
+
+
+Question -> 7
+
+
+What is the difference between React.development.js and React.production.js?
+
+
+Answer ->
+
+        react.development.js: 
+        
+        
+This version is intended for use during development. 
+        
+It includes additional warnings and error messages in the console to help developers identify and fix issues. 
+        
+It also includes extra checks and warnings related to potential performance problems.
+
+
+        react.production.js: 
+        
+This version is optimized for production use. 
+        
+It omits the extra warnings and error messages present in the development version. 
