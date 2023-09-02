@@ -4,6 +4,8 @@
   "description": "Exploring the world of React through my coding journey.",
  
   "scripts": {
+    "start": "parcel index1.html",
+    "build" : "parcel build index1.html",
     "test": "jest"
   },
   "repository": {
