@@ -1,0 +1,203 @@
+Question - 1 
+
+        What is NPM ?
+
+Answer -> 
+
+    1-- NPM or we can say Node Package Manager (Although it's not its full form) is the default package manager for JavaScript's runtime Node.js. 
+
+    2-- Developed by Isaac Z. Schlueter
+
+    3-- it was initially released in January 12, 2010.
+
+    4-- NPM manages all the packages and modules for Node.js and consists of command line client npm. 
+    
+    5-- It gets installed into the system with installation of Node.js. 
+
+    6-- NPM can install all the dependencies of a project through the package.json file. It can also update and uninstall packages.
+
+    7-- npm or Node Package Manager is an open-source repository of tools engineers use to develop applications and websites.
+
+    8-- NPM allows developers to easily install , update and manage third party packages that extend the functionality of their projects.
+
+
+Question--2 
+
+    What is a Package Manager?
+
+Answer -- 
+
+    Let’s say you’re building an application that uses Stripe for payments. 
+    
+    A package manager will install all the code that your product will need to communicate with Stripe and process payments
+
+    Instead of writing all that code or copy/pasting it from Stripe’s docs, 
+    
+    engineers simply enter a command, and the package manager installs the code dependencies they need to communicate from Stripe.
+
+
+Question--3
+
+    What are Dependencies?
+
+Answer - 
+
+    A dependency is just a package that your project uses
+
+    Very few javascript projects are entirely self-contained. 
+    
+    When your project needs code from other projects in order to do its thing, those other projects are “dependencies”; 
+    
+    your project depends on them to run.
+
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+        When you install third-party packages via npm install , you’re adding a dependency. 
+        
+        Your project’s package.json file includes a list of your project’s dependencies.
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+Question--4 
+
+    What are devDependencies?
+
+Answer -- 
+
+        devDependencies are modules which are only required during local development and testing,
+        
+        while dependencies are modules which are also required at runtime (that is during production)
+
+        The production environment is where users access the final code after all of the updates and testing
+
+        devDependencies are packages used for development purpose only,
+
+        e.g for running tests or transpiling your code.
+        
+        Many packages that you install during development are not required for your app to work in production 
+        
+        — so we add those to our package.json devDependencies object.
+
+        In devDependencies, you’ll find different types of libraries such as:
+
+    formatting libraries: eslint, prettier, …
+    bundlers: webpack, gulp, parceljs, …
+    babel and all its plugins
+    everything related to tests: enzyme, jest, …
+
+
+Question--5
+
+    What is NPX?
+
+Answer--
+
+     The npx stands for Node Package Execute and it comes with the npm, 
+     
+     when you installed npm above 5.2.0 version then automatically npx will installed. 
+     
+     It is an npm package runner that can execute any package that you want from the npm registry without even installing that package. 
+
+Question -- 6
+
+    How NPX WORKS?
+
+Answer  ---
+
+    1--  With NPX, we can run and execute packages without having to install them locally 
+        or globally.
+
+    2-- If a package is already installed, NPX will search for the package binaries and then run
+        (binaries are present in bin folder in package.json file)
+
+    3-- If a package was not previously installed, NPX will not install the package
+         in your system
+
+         instead it will create a Temporary cache that will hold the package binaries 
+
+    4-- Once the execution is over , NPX will remove the installed cache binaries from the system. 
+
+
+    This basically saves disk space 
+
+    It also gives us the advantage of testing packages without having to install them.
+
+Question -- 7
+
+    what is .gitignore used for?
+
+Answer -- 
+
+    The .gitignore file is a text file that tells Git which files or folders to ignore in a project.
+
+    The .gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo.
+
+Question--8
+
+    What is the difference between Package.json and Package-lock.json?
+
+Answer-- 
+
+    Package.json --> 😍
+
+        🐱‍🏍 It is a json file that is present in root directory of the project. 
+
+            It holds all the important information about the project
+
+            It basically contains all the metadata about the project and all the dependencies 
+            that were installed using NPM
+
+    package-lock.json --> 😍
+
+        🐱‍🏍 package-lock.json is a locked version of package.json file. 
+
+        It will be generated automatically when we install/ modify any package via npm
+
+        The main purpose of this file is to keep track of the exact version of the packages that
+        were installed
+
+        Having a package-lock.json file ensures that whenever we do an npm install ,
+        the exact same version of all the packages should be installed all the time. 
+
+
+Question--9 
+
+        Why should i not modify package-lock.json?
+
+Answer - 
+
+        Dependency Consistency: 
+        
+        The package-lock.json file ensures that all team members and environments use the same versions of dependencies. 
+        
+        So, If you modify it manually, you risk introducing inconsistencies that could lead to unexpected behavior or bugs in your project.
+
+Question--10
+
+        What are node Modules?
+
+Answer -- 
+
+        When we install the package , the package manager reads the package.json file
+
+        It fetches the specified packages from npm registry and installs them in node modules
+        directly in our project.
+
+        Defination for Interview - > 
+
+        node Modules basically refer to the collection of packages and libraries that we use or install in our react application.
+
+        node modules are packages having javascript code that we can install and use in our project to add functionality, manage dependencies and for streamline development.
+
+
+        It is like kind of database for all our code, all our dependencies.
+
+        we can also say node modules is a collection of dependencies.
+
+--- important
+
+        node modules not only contains your project's direct dependencies, 
+        it also contains Transitive dependencies
+
+        Transitive dependencies are dependencies of your project's direct dependencies
+
+        In other words, they are dependencies that are required by library or package that we installed. 
