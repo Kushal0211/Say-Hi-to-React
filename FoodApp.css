@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    
+}
+
+.logo{
+    width: 150px;
+    
+    position: absolute;
+    left: -35px;
+    top: -35px;
+    border: 1px solid black;
+}
+
+.nav-items > ul {
+    font-size: 26px;
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.nav-items > ul > li {
+    padding: 15px;
+    margin: 15px 10px;
+} 
+
+.res-card {
+    width: 330px;
+    height: 410px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: 15px 10px;
+    transition: transform 0.5s;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.res-card:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+
+}
+
+.search {
+    padding: 10px;
+}
+
+.res-logo {
+    width: 100%;
+    height: 70%;
+    border-radius: 16px;
+    
+}
+
+.FoodDetails{
+    padding: 4px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+}
+
+.FoodShop{
+    font-size: 25px;
+    font-weight: 29300;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.FoodPrice{
+    font-family: 'Dosis', sans-serif;
+    color: red;
+}
+
+.FoodRating{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-left: 105px;
+}
+
+.Footer{
+    
+    margin-top: 55px;
+    border: 1px solid black;
+    background-color: rgb(17, 1, 1);
+    color: white;
+    
+}
+
+.copyright{
+    margin: 2px 15px;
+}
+
+.FooterMenuBox{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.AboutCompany{
+   margin: 0px 100px;
+}
+
+.AboutContact {
+    margin: 0px 100px;
+}
+
+.AboutDeliveryLocations{
+    margin: 0px 100px;
+}
+.CompanyList {
+    list-style-type: none;
+
+}
+
+.CompanyList > li {
+    margin: 10px;
+}
+
+.ContactList > li {
+    margin: 10px;
+}
+
+.LocationList >li{
+    margin: 10px;
+}
+
+.companyTitle{
+    font-weight: bolder;
+}
+
+.contactTitle{
+    font-weight: bolder;
+}
+
+.locationTitle{
+    font-weight: bolder;
+}
+
+.ContactList {
+    list-style-type: none;
+}
+
+.LocationList {
+    list-style-type: none;
+}
+
+.filter-btn{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
