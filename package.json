@@ -4,8 +4,8 @@
   "description": "Exploring the world of React through my coding journey.",
  
   "scripts": {
-    "start": "parcel index1.html",
-    "build" : "parcel build index1.html",
+    "start": "parcel FoodApp.html",
+    "build" : "parcel build FoodApp.html",
     "test": "jest"
   },
   "repository": {
